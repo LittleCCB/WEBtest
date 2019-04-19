@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-underline: none;
+}
+
+
+.nav_height{
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+}
