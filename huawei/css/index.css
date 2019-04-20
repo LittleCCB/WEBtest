@@ -10,6 +10,16 @@
 .container {
     margin: 0 auto;
 }
+.default{
+    cursor: default;
+}
+.pointer{
+    cursor: pointer;
+}
+.orange{
+    color: #f66f6a;
+}
+
 
 
 .nav_height {
@@ -63,7 +73,7 @@
 .container_balance ul p{
     font-size: 14px;
 }
-.orange{
-    color: #f66f6a;
+#GroupWebsite{
+    display: none;
 }
 
