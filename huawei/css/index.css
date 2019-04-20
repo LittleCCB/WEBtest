@@ -1,14 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
-    text-underline: none;
+    text-decoration: none;
 }
 
 
-.nav_height{
-    width: 100%;
-}
-.container{
+/*通用样式，直接引入使用*/
+.container {
     margin: 0 auto;
 }
+
+
+.nav_height {
+    width: 100%;
+    height: 28px;
+    line-height: 20px;
+    background-color: #000000;
+}
+
+.nav_height .container {
+    max-width: 1128px;
+    line-height: 28px;
+}
+
+.nav_height .container span a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav_height .container span a .iconfont{
+    font-size: 14px;
+}
+
+.nav_right {
+    float: right;
+    line-height: 28px;
+}
+
+.nav_right span a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav_right span a .iconfont{
+    padding: 0 8px;
+}
+
+#nav_register {
+    color: #ffffff;
+    border-left: solid 1px #ffffff;
+}
+
+.container_balance{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container_balance ul{
+    padding-right: 60px;
+}
+.container_balance ul p{
+    font-size: 14px;
+}
+.orange{
+    color: #f66f6a;
+}
+
