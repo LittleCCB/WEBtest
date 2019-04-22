@@ -7,7 +7,7 @@ $(document).ready(function () {
         $("#language").slideToggle(300);
         $("#language_onclick #language_down").toggleClass("icon-arrow-up-s-line");
     });
-    $("#phone_click").hover(function () {
-        $("#phone").fadeToggle("slow");
-    })
+    // $("#phone_click,#phone").hover(function () {
+    //     $("#phone").fadeToggle("slow");
+    // })
 });
