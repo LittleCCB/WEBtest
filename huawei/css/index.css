@@ -5,10 +5,12 @@
     text-decoration: none;
     font-family: "AkkuratPro-Regular", Helvetica, Arial, sans-serif;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     color: #000000;
 }
 
@@ -17,19 +19,22 @@ a{
 .container {
     margin: 0 auto;
 }
-.default{
+
+.default {
     cursor: default;
 }
-.pointer{
+
+.pointer {
     cursor: pointer;
 }
-.orange{
+
+.orange {
     color: #f66f6a;
 }
-.bg_white{
+
+.bg_white {
     background-color: #fff;
 }
-
 
 
 .nav_height {
@@ -48,7 +53,7 @@ a{
     font-size: 13px;
 }
 
-.nav_height .container span a .iconfont{
+.nav_height .container span a .iconfont {
     font-size: 14px;
 }
 
@@ -57,12 +62,12 @@ a{
     line-height: 28px;
 }
 
-.nav_right span a{
+.nav_right span a {
     color: #fff;
     font-size: 12px;
 }
 
-.nav_right span a .iconfont{
+.nav_right span a .iconfont {
     padding: 0 8px;
 }
 
@@ -71,84 +76,102 @@ a{
     border-left: solid 1px #ffffff;
 }
 
-.container_balance{
+.container_balance {
     padding: 40px 0;
     display: flex;
     justify-content: space-between;
 }
-.container_balance ul{
+
+.container_balance ul {
     padding-right: 60px;
 }
-.container_balance ul p{
+
+.container_balance ul p {
     font-size: 14px;
 }
-#GroupWebsite{
+
+#GroupWebsite {
     display: none;
 }
-#language{
+
+#language {
     display: none;
 }
-.language_head .iconfont{
+
+.language_head .iconfont {
     font-size: 18px;
 }
-.languageContent{
+
+.languageContent {
     padding: 40px 0;
 }
-.languageFont{
+
+.languageFont {
     color: #000000;
     font-weight: 500;
     font-size: 14px;
     padding-top: 0 !important;
 }
-.languageFont a{
+
+.languageFont a {
     text-decoration: underline;
     color: #000000;
 }
-.languageContent .container_balance{
+
+.languageContent .container_balance {
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
-.languageContent .container_balance ul{
+
+.languageContent .container_balance ul {
     padding-top: 20px;
 }
-.nav{
+
+.nav {
     height: 74px;
     background: #fff;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
     padding-top: 0;
     z-index: 2;
 }
+
 #nav .container {
     max-width: 1128px;
     line-height: 74px;
     position: relative;
 }
-#nav .container .nav_content img{
+
+#nav .container .nav_content img {
     width: 133px;
     height: 30px;
     padding: 22px 60px 22px 0;
     display: inline-block;
 }
-#nav .container .nav_content{
+
+#nav .container .nav_content {
     display: flex;
     width: 100%;
 }
-#nav .container .nav_content ul{
+
+#nav .container .nav_content ul {
     overflow: hidden;
 }
-#nav .container .nav_content ul li{
+
+#nav .container .nav_content ul li {
     list-style: none;
     float: left;
     padding-right: 30px;
 }
-#nav .container .nav_content ul li a{
+
+#nav .container .nav_content ul li a {
     color: #000000;
     padding-left: 19px;
     font-size: 18px;
     font-family: Microsoft YaHei, Arial, Helvetica, sans-serif !important;
 }
-#nav .container .nav_content .DemarcationLine{
+
+#nav .container .nav_content .DemarcationLine {
     width: 2px;
     height: 60%;
     background-color: gray;
@@ -158,173 +181,282 @@ a{
     float: left;
     margin-right: 40px;
 }
-#search{
+
+#search {
     position: absolute;
     right: 0;
     font-size: 35px;
 }
 
-#phone{
+#phone {
     position: relative;
     display: none;
     top: -4px;
-    overflow:hidden;
+    overflow: hidden;
 }
-#phone .phone_left{
+
+#phone .phone_left {
     min-height: 326px;
     width: 75%;
     float: left;
     background-color: #f5f5f5;
 }
-#phone .phone_right{
+
+#phone .phone_right {
     min-height: 326px;
     width: 25%;
     float: right;
     background-color: #ebebeb;
 }
-.technicalSupport{
+
+.technicalSupport {
     padding: 40px 15px;
     min-height: 326px;
     position: relative;
 }
-.technicalSupport ul{
+
+.technicalSupport ul {
 
 }
-.technicalSupport h3{
+
+.technicalSupport h3 {
     margin-bottom: 25px;
 }
-.technicalSupport li{
+
+.technicalSupport li {
     margin: 20px 0;
 }
-.technicalSupport p{
+
+.technicalSupport p {
     position: absolute;
     bottom: 40px;
 }
-.phoneTablet{
+
+.phoneTablet {
     padding: 40px 15px;
     min-height: 326px;
     position: relative;
 }
-.phoneTablet .img,.iconsFather{
+
+.phoneTablet .img, .iconsFather {
     min-height: 326px;
     display: inline-block;
     float: right;
 }
-.phoneTablet .iconsFather{
+
+.phoneTablet .iconsFather {
     padding: 40px 4% 0 6%;
     width: 50%;
 }
-.iconsFather .icons{
+
+.iconsFather .icons {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.iconsFather .icons ul{
+
+.iconsFather .icons ul {
     padding-bottom: 40px;
 }
-.iconsFather .icons ul a p{
+
+.iconsFather .icons ul a p {
     text-align: center;
     margin-top: 8px;
     margin-bottom: 0;
     font-size: 18px;
 }
-.iconsFather .icons ul a p i{
+
+.iconsFather .icons ul a p i {
     font-size: 18px;
     margin: 0;
 }
-.iconsFather .icons ul a i{
+
+.iconsFather .icons ul a i {
     text-align: center;
     font-size: 52px;
     margin: 0 50px;
 }
 
-#service{
+#service {
     position: relative;
     display: none;
     top: -4px;
-    overflow:hidden;
+    overflow: hidden;
 }
-#service .serviceHead{
+
+#service .serviceHead {
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
 }
-#service .serviceHead ul{
+
+#service .serviceHead ul {
     margin: 0 auto;
     text-align: center;
 }
-#service .serviceHead ul li{
+
+#service .serviceHead ul li {
     display: inline-block;
     padding: 20px 30px;
     font-size: 18px;
 }
-#service .serviceHead ul li:hover{
+
+#service .serviceHead ul li:hover {
     border-bottom: 5px solid #f66f6a;
 }
-#service .serviceHead ul li a{
+
+#service .serviceHead ul li a {
     color: #777777;
 }
-.serviceContent{
+
+.serviceContent {
     max-width: 1128px;
     overflow: hidden;
 }
-.serviceContent .left{
+
+.serviceContent .left {
     width: 73%;
     background-color: #f5f5f5;
     float: left;
 }
-.serviceContent .left .left_top{
+
+.serviceContent .left .left_top {
     display: flex;
     justify-content: space-between;
 }
-.serviceContent .left .left_top ul{
+
+.serviceContent .left .left_top ul {
     padding: 30px 20px;
 }
-.serviceContent .left .left_top ul img{
+
+.serviceContent .left .left_top ul img {
     margin-top: 20px;
 }
-.serviceContent .left .left_top ul .img_page{
+
+.serviceContent .left .left_top ul .img_page {
     position: absolute;
     left: 10%;
     text-align: center;
     font-size: 18px;
 }
-.serviceContent .left .left_top ul .img_page p{
+
+.serviceContent .left .left_top ul .img_page p {
     margin: -40px;
 }
-.serviceContent .left .left_last a{
+
+.serviceContent .left .left_last a {
     margin-left: 20px;
 }
-.serviceContent .right{
+
+.serviceContent .right {
     width: 27%;
     background-color: #ebebeb;
     float: right;
 }
-.serviceContent li{
+
+.serviceContent li {
     margin: -30px 0;
 }
-.serviceContent .right div{
+
+.serviceContent .right div {
     padding: 30px;
 }
-.serviceContent ul li a i{
+
+.serviceContent ul li a i {
     opacity: 0;
     color: #777777;
     padding-left: 8px;
 }
-.serviceContent ul li:hover a{
+
+.serviceContent ul li:hover a {
     text-decoration: underline;
 }
-.serviceContent ul li:hover a i{
+
+.serviceContent ul li:hover a i {
     opacity: 1;
 }
-.icons ul li a i{
+
+.icons ul li a i {
     opacity: 0;
 }
-.icons ul li:hover a{
+
+.icons ul li:hover a {
     color: #f66f6a;
 }
-#enterprise{
+
+#enterprise {
 
 }
-#Operator,#Yun{
+
+#Operator, #Yun {
     display: none;
+}
+
+
+.carousel-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 560px;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.carousel {
+    width: 4098px;
+    z-index: 9;
+    position: absolute;
+    left: -1366px;
+    top: 0;
+}
+
+.carousel li {
+    float: left;
+    width: 1366px;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.arrow {
+    z-index: 10;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    background: rgba(0, 0, 0, .2);
+    font-weight: 600;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0
+}
+
+.indicators {
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.indicator {
+    float: left;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.indicator.active {
+    background: #333;
 }
 
