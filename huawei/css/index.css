@@ -193,6 +193,7 @@ a {
     display: none;
     top: -4px;
     overflow: hidden;
+    z-index: 100;
 }
 
 #phone .phone_left {
@@ -282,6 +283,7 @@ a {
     display: none;
     top: -4px;
     overflow: hidden;
+    z-index: 100;
 }
 
 #service .serviceHead {
@@ -400,7 +402,7 @@ a {
 }
 
 .carousel {
-    width: 4098px;
+    width: 6830px;
     z-index: 9;
     position: absolute;
     left: -1366px;
@@ -460,3 +462,12 @@ a {
     background: #333;
 }
 
+
+.carousel li div{
+    margin: 0 auto;
+    /*position: absolute;*/
+    /*top: 0;*/
+}
+.carousel li div img{
+    width: auto;
+}
