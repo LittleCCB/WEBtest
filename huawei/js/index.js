@@ -41,7 +41,7 @@ var carousel = $('ul.carousel'),
     indicators = $('li.indicator'),
     carouselWrap = $('div.carousel-wrap');
 
-var num = 3, carouselWidth = 1366, count = 1, timer = null;
+var num = 5, carouselWidth = 1366, count = 1, timer = null;
 
 //设置左右箭头的点击事件
 
@@ -77,9 +77,10 @@ carouselWrap
 
 // 动画 主函数
 function move(flag) {
+    //向左滑动
     if (flag !== true) {
         count++;
-        console.log(count)
+        console.log(count);
         let l = -carouselWidth * count;
         if (count === num - 1) {
             carousel.finish().animate({
@@ -95,8 +96,9 @@ function move(flag) {
                 left: l
             }, 500)
         }
-    } else {
+    } else {//向右滑动
         count--;
+        console.log(count);
         let l = -carouselWidth * count;
         if (count === 0) {
             carousel.finish().animate({
