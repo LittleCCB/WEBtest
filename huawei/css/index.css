@@ -18,6 +18,7 @@ a {
 /*通用样式，直接引入使用*/
 .container {
     margin: 0 auto;
+    width: 100%;
 }
 
 .default {
@@ -133,9 +134,14 @@ a {
     background: #fff;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
     padding-top: 0;
-    z-index: 2;
+    z-index: 100;
 }
-
+#nav_container{
+    width: 100%;
+    top: 28px;
+    z-index: 1000;
+    position: fixed;
+}
 #nav .container {
     max-width: 1128px;
     line-height: 74px;
@@ -191,10 +197,11 @@ a {
 #phone {
     position: relative;
     display: none;
-    top: -4px;
+    top: -6px;
     overflow: hidden;
     z-index: 100;
 }
+
 
 #phone .phone_left {
     min-height: 326px;
@@ -216,8 +223,14 @@ a {
     position: relative;
 }
 
-.technicalSupport ul {
-
+.technicalSupport ul i{
+    display: none;
+}
+.technicalSupport ul li:hover i{
+    display: inline-block;
+}
+.technicalSupport ul li:hover a{
+    text-decoration: underline;
 }
 
 .technicalSupport h3 {
@@ -266,12 +279,20 @@ a {
     margin-bottom: 0;
     font-size: 18px;
 }
+.iconsFather .icons ul a:hover p{
+    color: #f66f6a;
+}
 
 .iconsFather .icons ul a p i {
     font-size: 18px;
+    position: relative;
     margin: 0;
+    opacity: 0;
 }
-
+.iconsFather .icons ul a:hover i{
+    opacity: 1;
+    color: black;
+}
 .iconsFather .icons ul a i {
     text-align: center;
     font-size: 52px;
@@ -281,7 +302,7 @@ a {
 #service {
     position: relative;
     display: none;
-    top: -4px;
+    top: -6px;
     overflow: hidden;
     z-index: 100;
 }
@@ -293,6 +314,7 @@ a {
 #service .serviceHead ul {
     margin: 0 auto;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
 #service .serviceHead ul li {
@@ -308,7 +330,10 @@ a {
 #service .serviceHead ul li a {
     color: #777777;
 }
-
+.service_content{
+    width: 100%;
+    background: linear-gradient(to right,#f5f5f5,#ebebeb);
+}
 .serviceContent {
     max-width: 1128px;
     overflow: hidden;
@@ -412,6 +437,7 @@ a {
 .carousel li {
     float: left;
     width: 1366px;
+    position: relative;
 }
 
 .carousel img {
@@ -428,9 +454,9 @@ a {
     top: 50%;
     margin-top: -25px;
     text-decoration: none;
-    color: #333;
+    color: #f66f6a;
     font-size: 30px;
-    background: rgba(0, 0, 0, .2);
+    /*background: rgba(0, 0, 0, .2);*/
     font-weight: 600;
 }
 
@@ -463,11 +489,94 @@ a {
 }
 
 
-.carousel li div{
-    margin: 0 auto;
-    /*position: absolute;*/
-    /*top: 0;*/
+.carousel li .rotation_contentImg{
+    position: absolute;
 }
-.carousel li div img{
+.carousel li .rotation_contentImg img{
     width: auto;
+}
+.carousel li .rotation_contentImg p{
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+}
+.carousel li .rotation_contentImg p i{
+    font-size: 25px;
+}
+.carousel li .rotation_contentImg_1{
+    top: 32%;
+    left: 32%;
+}
+.carousel li .rotation_contentImg_1 p i{
+    font-size: 25px;
+    position: absolute;
+    left: 60%;
+    transition: 0.3s;
+}
+.carousel li .rotation_contentImg_1 p:hover i{
+    left: 63%;
+    transition: 0.3s;
+}
+.carousel li .rotation_contentImg_2{
+    top: 34%;
+    left: 45%;
+}
+.carousel li .rotation_contentImg_2 p i{
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 110%;
+    transition: 0.3s;
+}
+.carousel li .rotation_contentImg_2 p:hover i{
+    left: 130%;
+    transition: 0.3s;
+}
+.carousel li .rotation_contentImg_3{
+
+}
+.rotation_pos{
+    position: absolute;
+    top: 570px;
+    z-index: 100;
+}
+.rotation_last{
+    max-width: 1128px;
+    margin: 0 auto;
+}
+.rotation_last ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.rotation_last ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.rotation_last ul li div{
+    margin-left: 30px;
+}
+.rotation_last ul li div h2 i{
+    font-size: 28px;
+    display: none;
+}
+.rotation_last ul li div:hover i{
+    display: inline-block;
+    color: #000000;
+}
+.rotation_last ul li div:hover h2{
+    color: #f66f6a;
+}
+.rotation_last ul li div p{
+    font-size: 18px;
+    color: #666;
+}
+.rotation_last ul li img{
+    width: 94px;
+    height: 133px;
 }
