@@ -9,11 +9,11 @@ $(document).ready(function () {
     });
     $("#phone_click,#phone").hover(function () {
         $("#service").hide();
-        $("#phone").fadeToggle("slow");
+        $("#phone").fadeToggle();
     });
     $("#search_click,#service").hover(function () {
         $("#phone").hide();
-        $("#service").fadeToggle("slow");
+        $("#service").fadeToggle();
         $("#enterprise_click").click(function () {
             $("#Operator,#Yun").hide();
             $("#Operator_click,#Yun_click").css("border-bottom", "");
@@ -40,10 +40,10 @@ let nav_container = $("#nav_container");
 window.onmousewheel = document.onmousewheel = function () {
     if(window.event.wheelDelta){
         if(window.event.wheelDelta<0){
-            nav_container.slideUp("100");
+            nav_container.slideUp(300);
         }
         else if(window.event.wheelDelta>0){
-            nav_container.slideDown("100");
+            nav_container.slideDown(300);
             nav_container.css("top","0px");
         }
     }

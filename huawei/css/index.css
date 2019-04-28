@@ -580,3 +580,151 @@ a {
     width: 94px;
     height: 133px;
 }
+.P30_content{
+    max-width: 1366px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.P30_content .P30_bg{
+    width: 90%;
+    height: 450px;
+    background: linear-gradient(to bottom right, #15b0e8, #59c8d5);
+    position: absolute;
+}
+.P30_content .P30_content{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.P30_content .P30_content:hover .P30_img{
+    top: 30px;
+    transition: 0.2s;
+}
+.P30_content .P30_content:hover .P30_content h2 i{
+    right: 55%;
+    transition: 0.2s;
+}
+.P30_content .P30_content .P30_content h2 i{
+    line-height: 35px;
+    font-size: 25px;
+    position: absolute;
+    right: 60%;
+    transition: 0.2s;
+}
+.P30_content .P30_content .P30_img{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    transition: 0.2s;
+}
+.P30_content .P30_content .P30_content{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: 170px;
+    position: relative;
+    display: inline-block;
+}
+.P30_content .P30_content .P30_content img{
+    width: 236px;
+    height: 46px;
+}
+.P30_content .P30_content .P30_content p{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.P30_content .P30_content .P30_content h2{
+    margin: 60px 0 90px 0;
+    color: #ffffff;
+    position: relative;
+}
+.P30_content .P30_content .P30_content small{
+    color: #ffffff;
+    font-size: 3px;
+    position: absolute;
+    bottom: 0;
+}
+.P30_content .P30_content .mate20_content{
+    width: 49%;
+    float: left;
+}
+.P30_content .mate20_content{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.mate20_content .mate20{
+    width: 452px;
+    margin-left: 100px;
+    background-color: #dde6ed;
+}
+.mate20_content .mate20 .mate20_font{
+    padding: 40px 60px;
+}
+.mate20_content .mate20 .mate20_font h1{
+    margin: 20px 0;
+}
+.mate20_content .mate20 .mate20_font h4{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.mate20_content .mate20 .mate20_font h2{
+    margin-top: 180px;
+    font-weight: 500;
+    position: relative;
+}
+.mate20_content .mate20 .mate20_font h2 i{
+    font-size: 30px;
+    position: absolute;
+    left: 100px;
+    transition: 0.2s;
+}
+.mate20_content .mate20:hover .mate20_font h2 i{
+    left: 120px;
+    transition: 0.2s;
+}
+
+.mateX{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.mateX .mateX_img{
+    position: absolute;
+    top: 100px;
+    right: 290px;
+}
+.mateX .mateX_img h2{
+    margin: 30px auto;
+}
+
+.Exhibition{
+    width: 100%;
+    max-width: 1128px;
+}
+.Exhibition_top{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.Exhibition_top h1{
+    float: left;
+}
+.Exhibition_top a{
+    float: right;
+    position: relative;
+    width: 100px;
+}
+.Exhibition_top a i{
+    position: absolute;
+    right: 20px;
+    transition: 0.1s;
+}
+.Exhibition_top a:hover i{
+    right: 10px;
+    transition: 0.1s;
+
+}
+
+
+
