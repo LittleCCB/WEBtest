@@ -860,8 +860,39 @@ a {
 }
 .friendshipLink{
     background: #f0f0f0;
-    padding-top: 60px;
+    padding: 60px 0;
 }
 .friendshipLink_content{
     max-width: 1128px;
+    display: flex;
+    justify-content: space-between;
+}
+.friendshipLink_content ul{
+    margin-bottom: 30px;
+}
+.friendshipLink_content ul li{
+    padding-bottom: 13px;
+}
+.bold{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #282828;
+    position: relative;
+}
+.bold i{
+    float: right;
+    position: absolute;
+    left: 100%;
+    top: -3px;
+    font-size: 30px;
+}
+.bold:hover i{
+    left: 120%;
+}
+.normal{
+    font-size: 16px;
+}
+.normal:hover{
+    text-decoration: underline;
 }
