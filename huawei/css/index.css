@@ -478,9 +478,9 @@ a {
 .indicator {
     float: left;
     margin-right: 10px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 41%;
     background: #ccc;
 }
 
@@ -693,38 +693,175 @@ a {
 .mateX .mateX_img{
     position: absolute;
     top: 100px;
-    right: 290px;
+    right: 250px;
 }
 .mateX .mateX_img h2{
     margin: 30px auto;
 }
 
-.Exhibition{
+.Exhibition,.Story,.News{
     width: 100%;
     max-width: 1128px;
 }
-.Exhibition_top{
+.Exhibition_top,.Story_top,.News_top{
     width: 100%;
     margin-bottom: 50px;
+    overflow: hidden;
 }
-.Exhibition_top h1{
+.Exhibition_top h1,.Story_top h1,.News_top h1{
     float: left;
 }
-.Exhibition_top a{
+.Exhibition_top a ,.Story_top a ,.News_top a{
+    font-size: 18px;
     float: right;
     position: relative;
     width: 100px;
 }
-.Exhibition_top a i{
+.Exhibition_top a i,.Story_top a i,.News_top a i{
+    font-size: 25px;
     position: absolute;
-    right: 20px;
+    right: 8px;
+    transition: 0.1s;
+}
+.Story_top a:hover i{
+    right: -5px;
     transition: 0.1s;
 }
 .Exhibition_top a:hover i{
-    right: 10px;
+    right: -5px;
     transition: 0.1s;
-
+}
+.News_top a:hover i{
+    right: -5px;
+    transition: 0.1s;
+}
+.Exhibition_rotation{
+    width: 100%;
 }
 
+.Exhibition_rotation .carousel-wrap {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1128px;
+}
 
+.Exhibition_rotation .carousel {
+    width: 4512px;
+    z-index: 9;
+    position: absolute;
+    left: -1128px;
+    top: 0;
+}
 
+.Exhibition_rotation .carousel li {
+    float: left;
+    width: 1128px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.Exhibition_rotation .carousel li img{
+    width: 1128px;
+}
+
+.Exhibition_rotation .carousel-wrap .carousel li .Exhibition_rotation_content{
+    width: 43%;
+    padding: 50px;
+    background-color: #dce6ee;
+    float: left;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.Exhibition_rotation .carousel-wrap .carousel li img{
+    width: 542px;
+    height: 520px;
+    float: left;
+}
+.Exhibition_rotation  .arrow-left {
+    left: -50px;
+}
+.Story_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.Story_content ul li{
+    width: 380px;
+    text-align: center;
+    position: relative;
+}
+.Story_content ul:hover li{
+    text-align: left;
+}
+.Story_content ul li img{
+    border-radius: 5px 5px 0 0;
+    z-index: 2;
+}
+.Story_content .Story_content_font{
+    margin: -90px auto;
+    width: 314px;
+    height: 300px;
+    background-color: #dde6ed;
+    z-index: 1;
+    border-radius: 5px;
+}
+.Story_content .Story_content_font div{
+    padding: 100px 30px 0 30px;
+    text-align: left;
+}
+.Story_content .Story_content_font div h2{
+    padding: 70px 0 0 0;
+}
+.Story_content .Story_content_font .pointer{
+    font-weight: 500;
+}
+
+.News_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.News_content_left{
+    margin: 0 0 0 -80px;
+}
+.News_content_left img{
+    width: 400px;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+}
+.News_content_left_font{
+    width: 400px;
+    background-color: #dde6ed;
+    margin-top: -5px;
+}
+.News_content_left_font div{
+    padding: 20px;
+}
+.News_content_left_font div .pointer{
+    font-weight: 500;
+    margin-top: 90px;
+}
+.News_content_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.News_content_right ul h3{
+    font-weight: 500;
+    cursor: pointer;
+}
+.News_content_right ul h3:hover{
+    text-decoration: underline;
+}
+.News{
+    margin-bottom: 100px;
+}
+.friendshipLink{
+    background: #f0f0f0;
+    padding-top: 60px;
+}
+.friendshipLink_content{
+    max-width: 1128px;
+}

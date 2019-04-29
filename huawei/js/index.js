@@ -96,7 +96,7 @@ function move(flag) {
     //向左滑动
     if (flag !== true) {
         count++;
-        console.log(count);
+        // console.log(count);
         let l = -carouselWidth * count;
         if (count === num - 1) {
             carousel.finish().animate({
@@ -114,7 +114,7 @@ function move(flag) {
         }
     } else {//向右滑动
         count--;
-        console.log(count);
+        // console.log(count);
         let l = -carouselWidth * count;
         if (count === 0) {
             carousel.finish().animate({
