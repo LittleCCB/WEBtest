@@ -4,81 +4,182 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .carousel-wrap {
+        position: relative;
+        overflow: hidden;
+        height: 560px;
+        width: 1300px;
+        margin: 0 auto;
+    }
+
+    .carousel {
+        width: 6500px;
+        z-index: 9;
+        position: absolute;
+        left: -1300px;
+        top: 0;
+    }
+
+    .carousel li {
+        float: left;
+        width: 1300px;
+        position: relative;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
+
+    .arrow {
+        z-index: 10;
+        position: absolute;
+        width: 30px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        top: 50%;
+        margin-top: -25px;
+        text-decoration: none;
+        color: #f66f6a;
+        font-size: 30px;
+        /*background: rgba(0, 0, 0, .2);*/
+        font-weight: 600;
+    }
+
+    .arrow-left {
+        left: 0;
+    }
+
+    .arrow-right {
+        right: 0
+    }
+    video{
+        position: absolute;
+        top: 20px;
+        width: 1300px;
+        height: 600px;
+    }
+</style>
 <body>
-<div id="div" style="width: 400px;height: 200px;background-color: yellow;opacity: 1"></div>
-<button id="btn">dianwo</button>
-<form action="/user/login" method="get">
-    <input type="text" name="userName">
-    <input type="password" name="passWord">
-    <button type="submit">提交</button>
-</form>
+
+    <div class="carousel-wrap">
+           
+        <ul class="carousel">
+            <li><img src="img/hbanner-hwsafer-bg.jpg" alt=""></li>
+            <li>
+                <img src="img/Hbanner-annualreport-bg.jpg" alt="">
+            </li>
+             
+            <li>
+                <img src="img/hbanner_p30pro_cn_v3.jpg" alt="">
+                <video src="img/焦作.mp4" controls></video>
+            </li>
+            <li><img src="img/hbanner-hwsafer-bg.jpg" alt=""></li>
+            <li>
+                <img src="img/Hbanner-annualreport-bg.jpg" alt="">
+            </li>
+               
+        </ul>
+            <a class="arrow arrow-left" href="">&lt;</a>
+            <a class="arrow arrow-right" href="">&gt;</a>
+           
+         
+    </div>
+</div>
 </body>
-<!--<script src="js/jquery.js"></script>-->
+<script src="js/jquery.js"></script>
 <script>
-// $(document).ready(function () {
-//     $("#btn").click(function () {
-//         $("#div").fadeToggle();
-//     });
-// });
+    var carousel = $('ul.carousel'),
+        arrowLeft = $('a.arrow-left'),
+        arrowRight = $('a.arrow-right'),
+        indicators = $('li.indicator'),
+        carouselWrap = $('div.carousel-wrap');
 
-// var div = document.getElementById("div");
-// var btn = document.getElementById("btn");
-// var num = 0;
-//
-// btn.onclick = function () {
-//     if (num == 0) {
-//         num = In(div);
-//     }else {
-//         num = Out(div);
-//     }
-// };
-// function In(div) {
-//     div.style.opacity = '0';
-//     div.style.display = 'none';
-//     return 1;
-// }
-// function Out(aaa) {
-//     div.style.opacity = '1';
-//     div.style.display = 'block';
-//     return 0;
-// }
+    var num = 5, carouselWidth = 1300, count = 1, timer = null;
 
+    //设置左右箭头的点击事件
 
-var array = [1,4,1,1,3,3,4,6,7,8,3,7,0,11,22,22];
-function f(array[]) {
-    var n = 0;
-    var arr = [];
-    console.log(array);
-    console.log(array.length);
-    for(var i = 1;i<=array.length;i++){
-        for (var j = 1; j <= i; j++) {
-            if (array[i] == array[j]) {
-                arr[n] = array[i];
-                n++;
+    arrowLeft.click(function (e) {
+
+        e.preventDefault();
+        move(true)
+    });
+    arrowRight.click(function (e) {
+        e.preventDefault();
+        move()
+    });
+
+    // 指示器
+    indicators.click(function () {
+        count = $(this).index();
+        setIndicatorStyle();
+        carousel.finish().animate({left: -carouselWidth * count}, 500)
+    });
+
+    // 设置指示器样式
+    function setIndicatorStyle() {
+        indicators.eq(count - 1).addClass('active').siblings().removeClass('active')
+    }
+
+    interval();
+    // 鼠标移入  暂停 自动轮播
+    carouselWrap
+        .mouseover(function () {
+            clearInterval(timer)
+        })
+        .mouseout(interval);   // 鼠标移开 记录轮播
+
+    // 动画 主函数
+    function move(flag) {
+        //向左滑动
+        if (flag !== true) {
+            count++;
+            // console.log(count);
+            let l = -carouselWidth * count;
+            if (count === num - 1) {
+                carousel.finish().animate({
+                    left: l
+                }, 500, function () {
+                    count = 1;
+                    setIndicatorStyle();
+                    $(this).css('left', -carouselWidth * count)
+                })
+            } else {
+                setIndicatorStyle();
+                carousel.finish().animate({
+                    left: l
+                }, 500)
+            }
+        } else {//向右滑动
+            count--;
+            // console.log(count);
+            let l = -carouselWidth * count;
+            if (count === 0) {
+                carousel.finish().animate({
+                    left: l
+                }, 500, function () {
+                    count = num - 2;
+                    setIndicatorStyle();
+                    $(this).css('left', -carouselWidth * count)
+                })
+            } else {
+                setIndicatorStyle();
+                carousel.finish().animate({
+                    left: l
+                }, 500)
             }
         }
     }
-    return arr[];
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // 自动轮播
+    function interval() {
+        timer = setInterval(move, 2000)
+    }
 
 </script>
 </html>

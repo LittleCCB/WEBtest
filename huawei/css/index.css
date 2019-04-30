@@ -188,10 +188,17 @@ a {
     margin-right: 40px;
 }
 
-#search {
+#search{
     position: absolute;
-    right: 0;
+    right: 70px;
     font-size: 35px;
+}
+#more{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 35px;
+    display: none;
 }
 
 #phone {
@@ -201,7 +208,18 @@ a {
     overflow: hidden;
     z-index: 100;
 }
-
+#nav_med{
+    position: relative;
+    /*display: none;*/
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+#nav_med ul li{
+    box-shadow: 2px 0px 1px rgba(0, 0, 0, 0.2);
+    line-height: 50px;
+    padding-left: 10px;
+}
 
 #phone .phone_left {
     min-height: 326px;
@@ -895,4 +913,11 @@ a {
 }
 .normal:hover{
     text-decoration: underline;
+}
+.iFont{
+    font-size: 25px;
+    color: #000000;
+}
+.iFont:hover{
+    color: gray;
 }

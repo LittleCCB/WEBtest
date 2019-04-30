@@ -1,0 +1,14 @@
+@media screen and (max-width: 1050px){
+    .nav_height{
+        display: none;
+    }
+    #nav_container{
+        top: 0;
+    }
+    .nav_content ul{
+        display: none;
+    }
+    #more{
+        display: inline-block;
+    }
+}
