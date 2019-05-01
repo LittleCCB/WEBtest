@@ -210,15 +210,40 @@ a {
 }
 #nav_med{
     position: relative;
-    /*display: none;*/
+    display: none;
     width: 100%;
     background-color: #f5f5f5;
     height: 100vh;
+    overflow: auto;
+    top: -6px;
 }
 #nav_med ul li{
-    box-shadow: 2px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px #cccccc;
     line-height: 50px;
     padding-left: 10px;
+    background-color: #fff;
+}
+.bg_gray{
+    background-color: #ecebeb !important;
+    font-weight: bold;
+}
+#nav_med ul li i{
+    float: right;
+}
+#nav_med ul li .con{
+    display: none;
+}
+.logIn{
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: #f66f6a;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+.logIn a{
+    color: #fff;
 }
 
 #phone .phone_left {
@@ -712,6 +737,9 @@ a {
     position: absolute;
     top: 100px;
     right: 250px;
+}
+#NO_4{
+    display: none;
 }
 .mateX .mateX_img h2{
     margin: 30px auto;

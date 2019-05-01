@@ -33,14 +33,24 @@ $(document).ready(function () {
             $("#Yun_click").css("border-bottom", "5px solid #f66f6a");
         });
     });
+    $("#more").click(function () {
+        $("#nav_med").toggle();
+        $("#NO_1").click(function () {
+            $("#NO_1 .con").slideToggle("fast");
+        });
+        $("#NO_2").click(function () {
+            $("#NO_2 .con").slideToggle("fast");
+        })
+    })
+
 });
 
 let nav_container = $("#nav_container");
-// var top = nav_container.css('top');
 window.onmousewheel = document.onmousewheel = function () {
     if(window.event.wheelDelta){
         if(window.event.wheelDelta<0){
             nav_container.slideUp(300);
+            $("#nav_med").hide();
         }
         else if(window.event.wheelDelta>0){
             nav_container.slideDown(300);

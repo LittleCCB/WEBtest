@@ -11,4 +11,123 @@
     #more{
         display: inline-block;
     }
+    .rotation_last ul{
+        flex-direction: column;
+        border-radius: 0;
+        border: 0;
+        padding: 0;
+    }
+    .rotation_last ul li{
+        border-bottom: 1px solid #cccccc;
+        padding: 20px 0;
+    }
+    .rotation_last ul li img{
+        display: none;
+    }
+    .rotation_pos{
+        top: 500px;
+    }
+    .rotation_last ul li div p{
+        display: none;
+    }
+    .rotation_last ul li div{
+        width: 95%;
+    }
+    .rotation_last ul li div h2 i{
+        display: block;
+        float: right;
+    }
+    .P30_content .P30_content{
+        width: 100%;
+        float: none;
+    }
+    .P30_content .P30_content .P30_img{
+        left: 43%;
+        top: 0;
+    }
+    .P30_content .P30_content:hover .P30_img{
+        top: 0;
+    }
+    .P30_content .P30_bg{
+        width: 100%;
+        height: 100%;
+    }
+    .P30_content .P30_content .P30_content{
+        margin-top: 119px;
+        margin-bottom: 165px;
+        margin-left: 60px;
+        position: relative;
+        display: inline-block;
+    }
+    .P30_content .mate20_content{
+        width: 100%;
+        float: none;
+        position: relative;
+    }
+    .mate20_content .mate20{
+        width: 100%;
+        margin-left: 0;
+    }
+    .mate20_content .mate20 img{
+        width: 100%;
+    }
+    .mate20_content .mate20 .mate20_font h2{
+        display: none;
+    }
+    .mateX .mateX_img{
+        top: 0;
+    }
+    #NO_3{
+        display: none;
+    }
+    #NO_4{
+        display: block;
+        width: 100%;
+    }
+    .Story_content{
+        flex-direction: column;
+    }
+    .Story_content ul{
+        width: 100%;
+    }
+    .Story_content ul li{
+        width: 100%;
+    }
+    .Story_content .Story_content_font{
+        width: 100%;
+        margin: 10px auto;
+        height: 180px;
+    }
+    .Story_content ul li img{
+        position: absolute;
+        right: 0;
+    }
+    .Story_content .Story_content_font div{
+        padding-top: 60px;
+    }
+    .Story_content .Story_content_font div h2{
+        display: none;
+    }
+    .News_content{
+        flex-direction: column;
+    }
+    .News_content_left img{
+        width: 100%;
+        height: auto;
+    }
+    .News_content_left_font{
+        width: 100%;
+    }
+    .News_content_left_font div{
+        text-align: center;
+    }
+    .News_content_left_font div .pointer{
+        display: none;
+    }
+    .News_content_right{
+        height: auto;
+    }
+    .News_content_right ul{
+        padding: 30px;
+    }
 }
